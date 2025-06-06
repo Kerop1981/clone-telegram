@@ -1,0 +1,17 @@
+<h2>Регистрация</h2>
+
+<form (ngSubmit)="register()">
+    <label>Email:</label><br>
+    <input [(ngModel)]="email" name="email" type="email">
+
+    <label>Пароль:</label><br>
+    <input [(ngModel)]="password" name="password" type="password"> <br>
+
+    <button type="submit">Создать аккаунт</button>
+</form>
+
+<p *ngIf="error" style="color: red;">{{error}}</p>
+
+<p>
+    уже есть аккаунт <a routerLink="/login">Войти </a>
+</p>

@@ -1,0 +1,10 @@
+<h2>Чат</h2>
+
+<div *ngFor="let msg of messages" style="margin-bottom: 10px">
+    <b>{{msg.author}}:</b> {{msg.text}}
+</div>
+
+<form (ngSubmit)="send()">
+    <input [(ngModel)]="newMessage" name="message">
+    <button type="submit">Отправить</button>
+</form>
