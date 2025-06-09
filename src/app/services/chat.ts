@@ -8,7 +8,9 @@ import { addDoc, collection, orderBy, query } from 'firebase/firestore';
 })
 export class ChatService {
   private firestore = inject(Firestore);
+  
   private auth = inject(Auth)
+
 
   private messageRef = collection(this.firestore, 'message');
 
