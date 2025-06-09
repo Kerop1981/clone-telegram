@@ -14,6 +14,7 @@ import { Message } from '../../interfaces/message';
 export class Chat implements OnInit {
 
   messages: Message[] = [];
+  
   newMessage = '';
 
   constructor(private chat: ChatService){}
