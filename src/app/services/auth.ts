@@ -13,6 +13,6 @@ export class AuthService {
   }
 
   login(email: string, password: string) {
-    return createUserWithEmailAndPassword(this.auth, email,password)
+    return createUserWithEmailAndPassword(this.auth, email,password);
   }
 }
