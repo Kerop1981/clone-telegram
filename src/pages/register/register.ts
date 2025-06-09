@@ -14,7 +14,9 @@ import { Router } from '@angular/router';
 export class Register {
 
   email = '';
+
   password = '';
+  
   error = '';
 
   constructor(private auth: AuthService,private router:Router){}
